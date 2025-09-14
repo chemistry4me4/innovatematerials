@@ -1,0 +1,344 @@
+Intro
+<section style="padding: 4em 2em; text-align: center; background: linear-gradient(to right, #e0f7fa, #ffffff); font-family: 'Segoe UI', sans-serif;">
+  <img src="your-photo.jpg" alt="Ali Riaz" style="width: 150px; border-radius: 50%; margin-bottom: 1em;">
+  <h1 style="font-size: 2.5em; color: #333;">Hey, I’m Ali Riaz.</h1>
+  <p style="font-size: 1.2em; color: #555; max-width: 600px; margin: 0 auto;">
+    I help create tailored molecular solutions for real-world challenges.
+  </p>
+</section>
+
+Lets work together button
+<a href="#contact" class="cta-button">Let’s work together</a>
+
+Approach section:
+
+<section style="padding: 4em 2em; background-color: #f9f9f9; font-family: 'Segoe UI', sans-serif;">
+  <h2 style="text-align: center; font-size: 2em; color: #333; margin-bottom: 1em;">My Approach</h2>
+  <div style="display: flex; flex-wrap: wrap; gap: 2em; justify-content: center; align-items: flex-start;">
+    
+    <!-- Collaborative Box -->
+    <div style="flex: 1; min-width: 300px; background: white; padding: 1.5em; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+      <h3 style="color: #00796b;">Collaborative</h3>
+      <p style="color: #555;">
+        I believe in the power of collaboration to advance scientific discovery. As an extension of your research team, I immerse myself in your goals and challenges. I work closely with peers and institutions to design tailored molecules and develop innovative materials that not only meet performance expectations—but often exceed them. My approach blends deep chemical insight with a global perspective, shaped by years of international research and interdisciplinary engagement.
+      </p>
+    </div>
+
+    <!-- Iterative Box -->
+    <div style="flex: 1; min-width: 300px; background: white; padding: 1.5em; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+      <h3 style="color: #00796b;">Iterative Approach</h3>
+      <p style="color: #555;">
+        I take an iterative approach to molecular design and material development, ensuring each step aligns with the intended functionality and scientific goals. Through careful refinement and repeated testing, I work collaboratively to optimize structures and properties—leaving no detail overlooked. This methodical process allows for precision, adaptability, and innovation in every project.
+      </p>
+    </div>
+
+    <!-- Generic Photo -->
+    <div style="flex: 1; min-width: 300px; text-align: center;">
+      <img src="generic-photo.jpg" alt="Research Collaboration" style="max-width: 100%; border-radius: 8px;">
+    </div>
+
+  </div>
+</section>
+Replace "generic-photo.jpg" with the actual filename of your image once uploaded to your GitHub repository.
+
+Experience Section:
+<section style="padding: 4em 2em; background-color: #ffffff; font-family: 'Segoe UI', sans-serif;">
+  <h2 style="text-align: center; font-size: 2em; color: #333; margin-bottom: 2em;">Experience</h2>
+  
+  <div style="display: flex; flex-wrap: wrap; gap: 2em; justify-content: center; align-items: flex-start;">
+
+    <!-- Completed Research Projects -->
+    <div style="flex: 1; min-width: 280px; background: #f5f5f5; padding: 1.5em; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.05); text-align: center;">
+      <img src="research-icon.png" alt="Research Projects" style="width: 60px; margin-bottom: 1em;">
+      <h3 style="font-size: 1.5em; color: #00796b;">Completed Research Projects</h3>
+      <p style="color: #555;">Global research contributions at leading academic institutions.</p>
+    </div>
+
+    <!-- 10+ Years of Experience -->
+    <div style="flex: 1; min-width: 280px; background: #f5f5f5; padding: 1.5em; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.05); text-align: center;">
+      <img src="experience-icon.png" alt="Experience" style="width: 60px; margin-bottom: 1em;">
+      <h3 style="font-size: 1.5em; color: #00796b;">10+ Years of Research Experience</h3>
+      <p style="color: #555;">In Chemistry and Materials, driving innovation through molecular design.</p>
+    </div>
+
+    <!-- Community Advocate -->
+    <div style="flex: 1; min-width: 280px; background: #f5f5f5; padding: 1.5em; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.05); text-align: center;">
+      <img src="advocate-icon.png" alt="Community Advocate" style="width: 60px; margin-bottom: 1em;">
+      <h3 style="font-size: 1.5em; color: #00796b;">Community Advocate</h3>
+      <p style="color: #555;">Championing a more inclusive world through science and outreach.</p>
+    </div>
+
+  </div>
+</section>
+Replace the image filenames (research-icon.png, experience-icon.png, advocate-icon.png) with your actual icons or illustrations once uploaded to your GitHub repository.
+
+Slides to highlight graphical abstracts
+<section style="padding: 4em 2em; background-color: #f0f8ff; font-family: 'Segoe UI', sans-serif;">
+  <h2 style="text-align: center; font-size: 2em; color: #333; margin-bottom: 1em;">Research Highlights</h2>
+
+  <div id="slider" style="position: relative; max-width: 800px; margin: 0 auto; overflow: hidden; border-radius: 8px;">
+    <div id="slides" style="position: relative; height: 400px;">
+      <div class="slide active">
+        <img src="abstract1.jpg" alt="Graphical Abstract 1" style="width: 100%; height: 100%; object-fit: cover;">
+        <div class="caption">Biodegradable polymer for medical implants</div>
+      </div>
+      <div class="slide">
+        <img src="abstract2.jpg" alt="Graphical Abstract 2" style="width: 100%; height: 100%; object-fit: cover;">
+        <div class="caption">Nanostructured coatings for thermal regulation</div>
+      </div>
+      <div class="slide">
+        <img src="abstract3.jpg" alt="Graphical Abstract 3" style="width: 100%; height: 100%; object-fit: cover;">
+        <div class="caption">Published in Advanced Materials, 2024</div>
+      </div>
+    </div>
+
+    <!-- Navigation Dots -->
+    <div id="dots" style="text-align: center; margin-top: 1em;">
+      <span class="dot active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+  </div>
+
+  <style>
+    .slide {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+    }
+    .slide.active {
+      opacity: 1;
+      z-index: 1;
+    }
+    .caption {
+      position: absolute;
+      bottom: 10px;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      background: rgba(0,0,0,0.5);
+      color: white;
+      padding: 0.5em;
+      font-size: 1em;
+    }
+    .dot {
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      margin: 0 5px;
+      background-color: #bbb;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+    .dot.active {
+      background-color: #00796b;
+    }
+  </style>
+
+  <script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slide');
+    const dots = document.querySelectorAll('.dot');
+
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.classList.toggle('active', i === index);
+        dots[i].classList.toggle('active', i === index);
+      });
+    }
+
+    setInterval(() => {
+      currentSlide = (currentSlide + 1) % slides.length;
+      showSlide(currentSlide);
+    }, 4000); // Change every 4 seconds
+
+    dots.forEach((dot, i) => {
+      dot.addEventListener('click', () => {
+        currentSlide = i;
+        showSlide(currentSlide);
+      });
+    });
+  </script>
+</section>
+</section>
+Replace abstract1.jpg, abstract2.jpg, etc. with the actual filenames of your graphical abstracts once uploaded to your GitHub repository.
+
+What Other says:
+<section style="padding: 4em 2em; background-color: #ffffff; font-family: 'Segoe UI', sans-serif;">
+  <h2 style="text-align: center; font-size: 2em; color: #333; margin-bottom: 2em;">What Professionals Say</h2>
+
+  <div style="display: flex; flex-wrap: wrap; gap: 2em; justify-content: center;">
+
+    <!-- Text Testimonial -->
+    <div style="flex: 1; min-width: 300px; background: #f9f9f9; padding: 1.5em; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.05);">
+      <p style="font-style: italic; color: #555;">“Ali’s molecular design expertise is unmatched. His ability to translate complex chemistry into real-world solutions is a rare gift.”</p>
+      <p style="text-align: right; font-weight: bold; color: #00796b;">— Dr. Jane Smith, University of Toronto</p>
+    </div>
+
+    <!-- Image Testimonial (Scanned Letter) -->
+    <div style="flex: 1; min-width: 300px; text-align: center;">
+      <img src="testimonial-letter1.jpg" alt="Letter of Recommendation" style="max-width: 100%; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+      <p style="margin-top: 0.5em; color: #555;">Letter from Prof. John Doe, MIT</p>
+    </div>
+
+    <!-- Another Text Testimonial -->
+    <div style="flex: 1; min-width: 300px; background: #f9f9f9; padding: 1.5em; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.05);">
+      <p style="font-style: italic; color: #555;">“Ali brings clarity, precision, and passion to every collaboration. His work has elevated our research outcomes.”</p>
+      <p style="text-align: right; font-weight: bold; color: #00796b;">— Dr. Elena Ruiz, ETH Zurich</p>
+    </div>
+
+  </div>
+</section>
+Replace testimonial-letter1.jpg with your actual scanned letter image filename. You can add more testimonials by duplicating the blocks.
+
+Get in touch: 
+<section id="contact" style="padding: 4em 2em; background-color: #e8f5e9; font-family: 'Segoe UI', sans-serif;">
+  <h2 style="text-align: center; font-size: 2em; color: #2e7d32; margin-bottom: 1em;">Get in Touch</h2>
+  <p style="text-align: center; font-size: 1.2em; color: #555; max-width: 600px; margin: 0 auto 2em;">
+    Schedule a session with me to discuss your project, research goals, or collaboration ideas.
+  </p>
+
+  <div style="display: flex; flex-wrap: wrap; gap: 2em; justify-content: center; align-items: flex-start;">
+
+    <!-- Generic Photo -->
+    <div style="flex: 1; min-width: 280px; text-align: center;">
+      <img src="generic-contact-photo.jpg" alt="Get in Touch" style="max-width: 100%; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+    </div>
+
+    <!-- Contact Form -->
+    <form style="flex: 1; min-width: 280px; background: white; padding: 2em; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+      <label for="name" style="display: block; margin-bottom: 0.5em; color: #333;">Name</label>
+      <input type="text" id="name" name="name" required style="width: 100%; padding: 0.8em; margin-bottom: 1em; border: 1px solid #ccc; border-radius: 4px;">
+
+      <label for="email" style="display: block; margin-bottom: 0.5em; color: #333;">Email</label>
+      <input type="email" id="email" name="email" required style="width: 100%; padding: 0.8em; margin-bottom: 1em; border: 1px solid #ccc; border-radius: 4px;">
+
+      <label for="message" style="display: block; margin-bottom: 0.5em; color: #333;">Message</label>
+      <textarea id="message" name="message" rows="5" required style="width: 100%; padding: 0.8em; border: 1px solid #ccc; border-radius: 4px;"></textarea>
+
+      <button type="submit" style="margin-top: 1.5em; background-color: #2e7d32; color: white; padding: 0.8em 1.5em; border: none; border-radius: 4px; cursor: pointer;">
+        Send Message
+      </button>
+    </form>
+  </div>
+
+  <!-- Direct Email -->
+  <div style="text-align: center; margin-top: 2em; font-size: 1em; color: #555;">
+    <p>Prefer email? Reach me directly at <a href="mailto:ali@annovateresearch.ca" style="color: #2e7d32; font-weight: bold;">ali@annovateresearch.ca</a></p>
+  </div>
+
+  <!-- Social Links -->
+  <div style="text-align: center; margin-top: 1em;">
+    <a href="https://www.linkedin.com/in/yourprofile" target="_blank" style="margin: 0 10px;">
+      <img src="linkedin-icon.png" alt="LinkedIn" style="width: 32px;">
+    </a>
+    <a href="https://www.researchgate.net/profile/yourprofile" target="_blank" style="margin: 0 10px;">
+      <img src="researchgate-icon.png" alt="ResearchGate" style="width: 32px;">
+    </a>
+    <a href="https://orcid.org/your-orcid-id" target="_blank" style="margin: 0 10px;">
+      <img src="orcid-icon.png" alt="ORCID" style="width: 32px;">
+    </a>
+  </div>
+</section>
+Replace "generic-contact-photo.jpg" with your actual image filename once uploaded to your GitHub repository. Same goes for the social icons.
+
+FAQ Section:
+<section style="padding: 4em 2em; background-color: #f9f9f9; font-family: 'Segoe UI', sans-serif;">
+  <h2 style="text-align: center; font-size: 2em; color: #333; margin-bottom: 2em;">Frequently Asked Questions</h2>
+
+  <div style="max-width: 700px; margin: 0 auto;">
+    <!-- FAQ Item -->
+    <div class="faq-item" style="margin-bottom: 1em;">
+      <button class="faq-question">Where do I begin?</button>
+      <div class="faq-answer">
+        <p>First things first, don't be nervous. We'll start with a free consultation to determine your design needs (and if we'll make great collaborators).</p>
+      </div>
+    </div>
+
+    <!-- FAQ Item -->
+    <div class="faq-item" style="margin-bottom: 1em;">
+      <button class="faq-question">What are your prices?</button>
+      <div class="faq-answer">
+        <p>Pricing is based on both the project's scope and your desired timeline. I promise fair rates and will always require your approval before we begin.</p>
+      </div>
+    </div>
+
+    <!-- FAQ Item -->
+    <div class="faq-item" style="margin-bottom: 1em;">
+      <button class="faq-question">How long does an engagement last?</button>
+      <div class="faq-answer">
+        <p>Timelines depend on the project, but I generally dedicate up to a month to each client, with the possibility of an extension based on my availability.</p>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    .faq-question {
+      width: 100%;
+      background-color: #00796b;
+      color: white;
+      padding: 1em;
+      text-align: left;
+      border: none;
+      border-radius: 4px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .faq-question:hover {
+      background-color: #004d40;
+    }
+    .faq-answer {
+      display: none;
+      background-color: #ffffff;
+      padding: 1em;
+      border-radius: 4px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      margin-top: 0.5em;
+      color: #555;
+    }
+    .faq-item.active .faq-answer {
+      display: block;
+    }
+  </style>
+
+  <script>
+    const faqItems = document.querySelectorAll('.faq-item');
+    faqItems.forEach(item => {
+      item.querySelector('.faq-question').addEventListener('click', () => {
+        item.classList.toggle('active');
+      });
+    });
+  </script>
+</section>
+
+Subscribe Option:
+<section style="padding: 4em 2em; background-color: #fffde7; font-family: 'Segoe UI', sans-serif;">
+  <h2 style="text-align: center; font-size: 2em; color: #f57f17; margin-bottom: 1em;">Stay in the Loop</h2>
+  <p style="text-align: center; font-size: 1.2em; color: #555; max-width: 600px; margin: 0 auto 2em;">
+    Subscribe to receive occasional updates on my latest research, collaborations, and insights. No spam—just science.
+  </p>
+
+  <form style="max-width: 500px; margin: 0 auto; background: white; padding: 2em; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+    <label for="subscriber-name" style="display: block; margin-bottom: 0.5em; color: #333;">Name</label>
+    <input type="text" id="subscriber-name" name="subscriber-name" required style="width: 100%; padding: 0.8em; margin-bottom: 1em; border: 1px solid #ccc; border-radius: 4px;">
+
+    <label for="subscriber-email" style="display: block; margin-bottom: 0.5em; color: #333;">Email</label>
+    <input type="email" id="subscriber-email" name="subscriber-email" required style="width: 100%; padding: 0.8em; margin-bottom: 1em; border: 1px solid #ccc; border-radius: 4px;">
+
+    <button type="submit" style="margin-top: 1em; background-color: #f57f17; color: white; padding: 0.8em 1.5em; border: none; border-radius: 4px; cursor: pointer;">
+      Subscribe
+    </button>
+
+    <!-- Privacy Note -->
+    <p style="margin-top: 1em; font-size: 0.9em; color: #777; text-align: center;">
+      Your information will never be shared or sold. You can unsubscribe at any time.
+    </p>
+  </form>
+</section>
+
+This note keeps things simple and respectful, while reinforcing your commitment to ethical communication. If you ever connect this form to a mailing service like Mailchimp or Formspree, you can also link to a full privacy policy page.
+
+Would you like help stitching all these sections into one complete homepage layout next? We’re nearly ready to launch annovateresearch.ca in style.

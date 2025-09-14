@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Functional Materials</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f0f4f8;
+      color: #333;
+    }
+
+    header {
+      background-color: #00796b;
+      color: white;
+      padding: 2em;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 4em;
+      margin-bottom: 0.2em;
+    }
+
+    header h2 {
+      font-size: 2em;
+      margin-bottom: 0.5em;
+      color: #e0f7fa;
+    }
+
+    .intro {
+  max-width: 1000px;
+  margin: 3em auto;
+  padding: 0 1.5em;
+  font-size: 1.2em;
+  line-height: 1.4;
+  color: #555;
+  text-align: justify;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+    .page-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 4em 2em;
+    }
+
+    .article-block {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-bottom: 4em;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      overflow: hidden;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+
+    .article-block.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .article-block:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+
+    .article-image, .article-text {
+      flex: 1 1 50%;
+      padding: 2em;
+      box-sizing: border-box;
+    }
+
+    .article-image img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .article-image img:hover {
+      transform: scale(1.02);
+    }
+
+    .article-text h3 {
+      font-size: 2em;
+      color: #00796b;
+      margin-bottom: 1em;
+    }
+
+    .article-text strong {
+      display: block;
+      margin-top: 1em;
+      margin-bottom: 0.5em;
+      color: #333;
+    }
+
+    .justified-list {
+  list-style: none;
+  padding-left: 0;
+  text-align: justify;
+  font-size: 1.2em;
+  color: #555;
+  margin-bottom: 1em;
+}
+
+.justified-list li::before {
+  content: "🔹 ";
+  margin-right: 0.3em;
+}
+
+.justified-list ul {
+  list-style: none;
+  padding-left: 1.5em;
+  margin-top: 0.5em;
+}
+
+.justified-list ul li::before {
+  content: "◾ ";
+  margin-right: 0.3em;
+}
+
+
+    .download-btn {
+      display: inline-block;
+      margin-top: 1.5em;
+      padding: 0.8em 1.2em;
+      background-color: #00796b;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .download-btn:hover {
+      background-color: #005f56;
+    }
+
+    .lightbox {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.8);
+      justify-content: center;
+      align-items: center;
+    }
+
+    .lightbox img {
+      max-width: 90%;
+      max-height: 90%;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(255,255,255,0.3);
+    }
+
+    @media (max-width: 768px) {
+      .article-block {
+        flex-direction: column;
+      }
+
+      .article-block:nth-child(even) {
+        flex-direction: column;
+      }
+
+      .article-text h3 {
+        font-size: 1.5em;
+      }
+
+      .justified-list {
+        font-size: 1em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Smart Solutions</h1>
+    <h2>Smart Technologies</h2>
+  </header>
+
+  <div class="intro">
+    <p>
+      We focus on the development of advanced technologies with tailored properties to meet specific application needs. Our research integrates chemistry, physics, and engineering to design stratigies meant for custom needs, enhance performance, and enable new technologies.
+    </p>
+    <p>
+      Applications include stretch sensors, N₂O emission controllers, alternative fuels, deep tissue imaging sensors and manymore. Our team uses cutting-edge techniques and tools to push the boundaries of material science.
+    </p>
+  </div>
+
+  <div class="page-container">
+
+    <!-- Article 1 -->
+<div class="article-block">
+  <div class="article-text">
+  <h3>Three-Layer Coated Urea for N₂O Emission Reduction</h3>
+
+  <strong>🔬 Research Problem</strong>
+  <ul class="justified-list">
+    <li>Nitrous oxide (N₂O) emissions pose a serious environmental threat, contributing to greenhouse gas accumulation.</li>
+    <li>The primary source of N₂O emissions is agricultural activity, especially the widespread use of urea-based fertilizers.</li>
+    <li>A solution was needed to reduce N₂O emissions by at least 30% without compromising soil fertility or crop yield.</li>
+  </ul>
+
+  <strong>✅ Proposed Solution</strong>
+  <ul class="justified-list">
+    <li>Developed a three-layer coating system for urea granules to mitigate N₂O release:
+      <ul class="sub-list">
+        <li><strong>First coating:</strong> Slowed down urea dissolution by 3×, reducing immediate N₂O formation</li>
+        <li><strong>Second coating:</strong> Chemically converted released N₂O into nitrates, minimizing gaseous loss</li>
+        <li><strong>Third coating:</strong> Incorporated denitrifying bacteria to biologically suppress N₂O emissions</li>
+      </ul>
+    </li>
+    <li>Achieved a 37% reduction in N₂O emissions compared to uncoated urea.</li>
+    <li>Designed an automated monitoring system to simultaneously track emissions from five sample types:
+      <ul class="sub-list">
+        <li>Soil without urea</li>
+        <li>Uncoated urea</li>
+        <li>Urea with first coating</li>
+        <li>Urea with two coatings</li>
+        <li>Urea with all three coatings</li>
+      </ul>
+    </li>
+  </ul>
+
+  <a class="download-btn" href="coated-urea.png" target="_blank">Download Full Article</a>
+</div>
+  <div class="article-image">
+    <img src="coated-urea.png" alt="coated-urea Article Page" onclick="openLightbox(this.src)" />
+  </div>
+</div>
+
+<!-- Article 2 -->
+
+<div class="article-block">
+<div class="article-text">
+  <h3>Stretchable Polymer Fibers for Neural-Mimetic Interfaces</h3>
+
+  <strong>🔬 Research Problem</strong>
+  <ul class="justified-list">
+    <li>Traditional silicon-based electronics struggle to perform reliably in dynamic biological environments due to their rigidity.</li>
+    <li>There is a growing need for soft, stretchable materials that can integrate with human motion for wearable and biocompatible technologies.</li>
+    <li>A key challenge was to develop a material that could mimic neural feedback, translating mechanical strain into meaningful electrical signals.</li>
+  </ul>
+
+  <strong>✅ Proposed Solution</strong>
+  <ul class="justified-list">
+    <li>Designed a stretchable polymer fiber capable of converting mechanical strain into electrical signals, emulating neural feedback.</li>
+    <li>Demonstrated dual functionality through two targeted applications:
+      <ul class="sub-list">
+        <li>A feedback-controlled oscillator for digital event detection</li>
+        <li>A wearable goniometer for analog strain sensing</li>
+      </ul>
+    </li>
+    <li>Developed a proof-of-concept system where movement patterns from a healthy muscle were recorded and transmitted to an actuator on a weakened muscle, enabling targeted motor recovery.</li>
+    <li>This work lays the foundation for neural-mimetic interfaces that are scalable, adaptive, and seamlessly integrate with human motion, advancing assistive rehabilitation technologies.</li>
+  </ul>
+
+  <a class="download-btn" href="stretch-sensor.png" target="_blank">Download Full Article</a>
+</div>
+       <div class="article-image">
+        <img src="stretch-sensor.png" alt="Stretch Sensor Article Page" onclick="openLightbox(this.src)" />
+      </div>
+    </div>
+    
+<!-- Article 3 -->
+
+<div class="article-block">
+  <div class="article-text">
+    <h3>Thermo-Catalytic Pyrolysis of Isobutylene-Isoprene Rubber for Liquid Fuel Recovery</h3>
+    <strong>🔬 Research Problem</strong>
+    <ul class="justified-list">
+      <li>Large quantities of used rubber materials, especially from vehicle tires and inner tubes, are discarded annually, posing serious environmental challenges.</li>
+      <li>Inner tube rubber, primarily composed of isobutylene-isoprene, is particularly hazardous and difficult to manage.</li>
+      <li>Conventional disposal methods are insufficient, and sustainable alternatives are urgently needed to reduce dependency on natural resources.</li>
+    </ul>
+
+    <strong>✅ Proposed Solution</strong>
+    <ul class="justified-list">
+      <li>Thermo-catalytic pyrolysis was employed to convert isobutylene-isoprene rubber into liquid fuel.</li>
+      <li>Optimization of key parameters—temperature (350 °C), catalyst weight (1.5 g of SiO₂), and heating time (1 hour)—yielded maximum rubber conversion.</li>
+      <li>Physical and chemical analysis of the pyrolyzed products revealed:
+        <ul>
+          <li>30% aliphatic hydrocarbons</li>
+          <li>25% polar hydrocarbons</li>
+          <li>40% aromatic hydrocarbons</li>
+        </ul>
+      </li>
+      <li>Distillation data confirmed the oil composition resembles diesel, comprising aromatic and olefinic hydrocarbons.</li>
+      <li>This oil may serve as an alternative fuel, offering a sustainable route for rubber waste valorization.</li>
+    </ul>
+
+    <a class="download-btn" href="rubber-SiO2.png" target="_blank">Download Full Article</a>
+  </div>
+  <div class="article-image">
+    <img src="rubber-SiO2.png" alt="Rubber Pyrolysis Article Page" onclick="openLightbox(this.src)" />
+  </div>
+</div>
+
+    <!-- Add more articles here -->
+
+  </div>
+
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-img" src="" alt="Expanded View" />
+  </div>
+
+  <script>
+    function openLightbox(src) {
+      document.getElementById('lightbox-img').src = src;
+      document.getElementById('lightbox').style.display = 'flex';
+    }
+
+    function closeLightbox() {
+      document.getElementById('lightbox').style.display = 'none';
+    }
+
+    const blocks = document.querySelectorAll('.article-block');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    blocks.forEach(block => observer.observe(block));
+  </script>
+
+</body>
+</html>

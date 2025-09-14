@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>InnovateMaterials Logo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #0d0d0d;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .logo-container {
+      position: relative;
+      text-align: center;
+      color: #00ffff;
+    }
+
+    .logo-text {
+      font-family: 'Great Vibes', cursive;
+      font-size: 200px;
+      font-weight: normal;
+      letter-spacing: -5px;
+    }
+
+    .wave {
+      position: absolute;
+      bottom: -30px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 200px;
+      height: 280px;
+    }
+
+    .wave path {
+      stroke: #ff00ff; /* magenta wave for contrast */
+      stroke-width: 2;
+      fill: none;
+      animation: waveMotion 3s infinite ease-in-out;
+    }
+
+    @keyframes waveMotion {
+      0% { transform: translateX(0); }
+      50% { transform: translateX(10px); }
+      100% { transform: translateX(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="logo-container">
+    <div class="logo-text">im</div>
+    <svg class="wave" viewBox="0 0 300 120">
+      <!-- Tighter wavelength and taller amplitude -->
+      <path d="M0,60 Q15,0 30,60 T60,60 T90,60 T120,60 T150,60 T180,60 T210,60 T240,60 T270,60 T300,60" />
+    </svg>
+  </div>
+</body>
+</html>

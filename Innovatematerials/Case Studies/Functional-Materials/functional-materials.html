@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Functional Materials</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f0f4f8;
+      color: #333;
+    }
+
+    header {
+      background-color: #00796b;
+      color: white;
+      padding: 2em;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 4em;
+      margin-bottom: 0.2em;
+    }
+
+    header h2 {
+      font-size: 2em;
+      margin-bottom: 0.5em;
+      color: #e0f7fa;
+    }
+
+    .intro {
+  max-width: 1000px;
+  margin: 3em auto;
+  padding: 0 1.5em;
+  font-size: 1.2em;
+  line-height: 1.4;
+  color: #555;
+  text-align: justify;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+    .page-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 4em 2em;
+    }
+
+    .article-block {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-bottom: 4em;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      overflow: hidden;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+
+    .article-block.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .article-block:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+
+    .article-image, .article-text {
+      flex: 1 1 50%;
+      padding: 2em;
+      box-sizing: border-box;
+    }
+
+    .article-image img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .article-image img:hover {
+      transform: scale(1.02);
+    }
+
+    .article-text h3 {
+      font-size: 2em;
+      color: #00796b;
+      margin-bottom: 1em;
+    }
+
+    .article-text strong {
+      display: block;
+      margin-top: 1em;
+      margin-bottom: 0.5em;
+      color: #333;
+    }
+
+    .justified-list {
+  list-style: none;
+  padding-left: 0;
+  text-align: justify;
+  font-size: 1.2em;
+  color: #555;
+  margin-bottom: 1em;
+}
+
+.justified-list li::before {
+  content: "🔹 ";
+  margin-right: 0.3em;
+}
+
+.justified-list ul {
+  list-style: none;
+  padding-left: 1.5em;
+  margin-top: 0.5em;
+}
+
+.justified-list ul li::before {
+  content: "◾ ";
+  margin-right: 0.3em;
+}
+
+
+    .download-btn {
+      display: inline-block;
+      margin-top: 1.5em;
+      padding: 0.8em 1.2em;
+      background-color: #00796b;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .download-btn:hover {
+      background-color: #005f56;
+    }
+
+    .lightbox {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.8);
+      justify-content: center;
+      align-items: center;
+    }
+
+    .lightbox img {
+      max-width: 90%;
+      max-height: 90%;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(255,255,255,0.3);
+    }
+
+    @media (max-width: 768px) {
+      .article-block {
+        flex-direction: column;
+      }
+
+      .article-block:nth-child(even) {
+        flex-direction: column;
+      }
+
+      .article-text h3 {
+        font-size: 1.5em;
+      }
+
+      .justified-list {
+        font-size: 1em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Functional Materials</h1>
+    <h2>Tailored Functionalities</h2>
+  </header>
+
+  <div class="intro">
+    <p>
+      We focus on the development of advanced functional materials with tailored properties to meet specific application needs. Our research integrates chemistry, physics, and engineering to design materials that respond to environmental stimuli, enhance performance, and enable new technologies.
+    </p>
+    <p>
+      Applications include energy storage, biomedical devices, and smart textiles. Our team uses cutting-edge synthesis techniques and characterization tools to push the boundaries of material science.
+    </p>
+  </div>
+
+  <div class="page-container">
+
+    <!-- Article 1 -->
+<div class="article-block">
+  <div class="article-text">
+    <h3>Removal of cadmium and chromium heavy metals from aqueous medium using composite bacterial cellulose membrane</h3>
+    <strong>🔬 Research Problem</strong>
+    <ul class="justified-list">
+      <li>Bacterial cellulose (BC) film was identified as a promising material for water filtration.</li>
+      <li>However, its native surface lacked the chemical functionality needed to selectively filter out cations, organic nutrients, and bacteria.</li>
+      <li>A key challenge was to design a surface modification that would be selective, efficient, antibacterial, and resistant to biofouling.</li>
+    </ul>
+
+    <strong>✅ Proposed Solution</strong>
+    <ul class="justified-list">
+      <li>A custom molecule was synthesized to chemically functionalize the BC surface.</li>
+      <li>Silane compounds were selectively modified to introduce tailored functional groups.</li>
+      <li>These groups enabled targeted pollutant filtration, while also providing antibacterial properties and biofouling resistance, enhancing the film’s long-term performance in water purification.</li>
+    </ul>
+
+    <a class="download-btn" href="Chemical-Engineering-Journal.png" target="_blank">Download Full Article</a>
+  </div>
+  <div class="article-image">
+    <img src="Chemical-Engineering-Journal.png" alt="TCPA Article Page" onclick="openLightbox(this.src)" />
+  </div>
+</div>
+
+<!-- Article 2 -->
+
+<div class="article-block">
+<div class="article-text">
+  <h3>Bacterial cellulose-graphene oxide composite membranes with enhanced fouling resistance for bio-effluents management</h3>
+
+  <strong>🔬 Research Problem</strong>
+  <ul class="justified-list">
+    <li>Bacterial cellulose composites are promising for industrial and environmental applications, but their use as free-standing water filtration membranes is limited.</li>
+    <li>Key challenges include low compressive strength, membrane fouling, and poor contaminant selectivity.</li>
+    <li>A solution was needed to enhance mechanical integrity and filtration performance under pressure-driven conditions.</li>
+  </ul>
+
+  <strong>✅ Proposed Solution</strong>
+  <ul class="justified-list">
+    <li>Graphene oxide was dispersed in poly(ethylene glycol) (PEG-400) and incorporated into the bacterial cellulose matrix via in-situ synthesis.</li>
+    <li>Optimal membrane properties were achieved at a graphene oxide loading of 2 mg/mL, forming a percolated network within the cellulose structure.</li>
+    <li>The hydrogen-bonded integration of graphene oxide nanosheets led to:
+      <ul class="sub-list">
+        <li>Nearly 2× higher water flux (380 L m⁻² h⁻¹)</li>
+        <li>Molecular weight cut-off between 100–200 kDa</li>
+        <li>6× increase in wet compression strength compared to pristine bacterial cellulose</li>
+        <li>>95% flux recovery after exposure to organic foulants and bacterial-rich feed</li>
+        <li>>95% rejection of synthetic natural organic matter and bacterial contaminants</li>
+      </ul>
+    </li>
+  </ul>
+
+  <a class="download-btn" href="bc-go-composite.pdf" target="_blank">Download Full Article</a>
+</div>
+       <div class="article-image">
+        <img src="CNPJ-Water.png" alt="BC-GO Article Page" onclick="openLightbox(this.src)" />
+      </div>
+    </div>
+
+<!-- Article 3 -->
+
+    <div class="article-block">
+      <div class="article-text">
+  <h3>Functionalization of bacterial cellulose-based nanofibrous surfaces with antibacterial moieties for membrane biofouling mitigation</h3>
+
+  <strong>🔬 Research Problem</strong>
+  <ul class="justified-list">
+    <li>Nanofibrous membranes are highly effective for filtration due to their ability to handle high fluid flow rates and remove micro- and nano-sized pollutants.</li>
+    <li>However, biofouling remains a major challenge, leading to:
+      <ul class="sub-list">
+        <li>Reduced permeate flux</li>
+        <li>Increased energy costs</li>
+        <li>Shortened membrane lifespan</li>
+      </ul>
+    </li>
+    <li>A solution was needed to enhance antibacterial and anti-biofouling performance without compromising filtration efficiency.</li>
+  </ul>
+
+  <strong>✅ Proposed Solution</strong>
+  <ul class="justified-list">
+    <li>Bacterial cellulose (BC) membranes were functionalized via simple impregnation with a custom-tailored silane containing picolinic acid, named TCPA.</li>
+    <li>Silver nanoparticle-treated BC membranes were used as controls for comparison.</li>
+    <li>Key outcomes of TCPA-functionalized BC membranes:
+      <ul class="sub-list">
+        <li>Maintained or enhanced membrane permeation due to increased hydrophilicity</li>
+        <li>Significantly reduced <em>E. coli</em> adhesion in bacterial challenge tests</li>
+        <li>Demonstrated strong anti-biofouling potential under high microbial load conditions</li>
+        <li>Outperformed control membranes in filtration, antibacterial, and anti-biofouling properties</li>
+      </ul>
+    </li>
+    <li>This study highlights the potential of TCPA-functionalized nanofibrous membranes as advanced filters for water treatment systems, combining intrinsic antibacterial and anti-biofouling advantages.</li>
+  </ul>
+
+  <a class="download-btn" href="BC-GO.png" target="_blank">Download Full Article</a>
+</div>
+      <div class="article-image">
+        <img src="BC-GO.png" alt="BC-GO Article Page" onclick="openLightbox(this.src)" />
+      </div>
+    </div>
+
+<!-- Article 4 -->
+
+    <div class="article-block">
+      <div class="article-text">
+        <h3>Plasmon-induced immobilization of xanthene chemosensors toward repurposing as SERS nanotags</h3>
+        <strong>🔬 Research Problem</strong>
+        <ul class="justified-list">
+          <li>In SERS nanotagging applications, anchoring xanthene-based chemosensing dyes onto silver (Ag) nanoparticles posed a challenge.</li>
+          <li>Direct attachment risked altering the dye’s intrinsic sensing properties due to uncontrolled binding or structural distortion.</li>
+          <li>A precise and stable linkage was needed to ensure targeted positioning without compromising dye functionality.</li>
+        </ul>
+
+        <strong>✅ Proposed Solution</strong>
+        <ul class="justified-list">
+          <li>A suitable crosslinker was carefully selected to bridge the dye molecule and Ag nanoparticles.</li>
+          <li>This crosslinker enabled controlled anchoring of the dye at specific sites on the nanoparticle surface.</li>
+          <li>The approach preserved the basic chemical and optical properties of the dye, ensuring effective SERS performance and reliable chemosensing.</li>
+        </ul>
+
+        <a class="download-btn" href="Srfaces-and-Interfaces.png" target="_blank">Download Full Article</a>
+      </div>
+      <div class="article-image">
+        <img src="Srfaces-and-Interfaces.png" alt="SERS Article Page" onclick="openLightbox(this.src)" />
+      </div>
+    </div>
+
+<!-- Article 5 -->
+
+    <div class="article-block">
+  <div class="article-text">
+    <h3>Centimeric POSS-3N: A Universal Molecular Platform for Environmental and Industrial Applications</h3>
+    <strong>🔬 Research Problem</strong>
+    <ul class="justified-list">
+      <li>The demand for versatile materials that can address multiple environmental and technological challenges is growing.</li>
+      <li>Traditional hybrid materials often lack multifunctionality, regenerability, and cross-domain adaptability.</li>
+      <li>A solution was needed to create a universal molecular platform capable of performing across disciplines—from environmental remediation to advanced packaging.</li>
+    </ul>
+
+    <strong>✅ Proposed Solution</strong>
+    <ul class="justified-list">
+      <li>Synthesized POSS-3N, a polyamine-functionalized silsesquioxane via a catalyst-free, optimized route with reduced synthesis time and improved yield.</li>
+      <li>Characterization confirmed a centimeric molecular architecture—featuring uniformly spaced reactive amine sites that enable multivalent interactions.</li>
+      <li>This unique structure endowed POSS-3N with multitasking capabilities, making it a universal molecule adaptable to diverse applications:</li>
+      <ul>
+        <li>Low-pressure CO₂ capture</li>
+        <li>Selective sorption of heavy metals (Cu²⁺ > Pb²⁺ > Cd²⁺)</li>
+        <li>Integration into gelatin-based films for supporting green-synthesized silver nanoparticles</li>
+      </ul>
+      <li>Statistical and thermodynamic modeling reinforced its mechanistic robustness and cross-functional performance.</li>
+      <li>The molecule’s centimeric qualities position it as a scalable, regenerable, and multifunctional platform for environmental, biomedical, and industrial applications.</li>
+    </ul>
+
+    <a class="download-btn" href="POSS-3N.png" target="_blank">Download Full Article</a>
+  </div>
+  <div class="article-image">
+    <img src="POSS-3N.png" alt="POSS-3N Article Page" onclick="openLightbox(this.src)" />
+  </div>
+</div>
+
+
+    <!-- Add more articles here -->
+
+  </div>
+
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-img" src="" alt="Expanded View" />
+  </div>
+
+  <script>
+    function openLightbox(src) {
+      document.getElementById('lightbox-img').src = src;
+      document.getElementById('lightbox').style.display = 'flex';
+    }
+
+    function closeLightbox() {
+      document.getElementById('lightbox').style.display = 'none';
+    }
+
+    const blocks = document.querySelectorAll('.article-block');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    blocks.forEach(block => observer.observe(block));
+  </script>
+
+</body>
+</html>

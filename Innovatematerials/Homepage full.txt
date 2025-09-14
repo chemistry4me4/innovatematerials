@@ -1,0 +1,240 @@
+Here we go, Ali—your complete homepage layout is ready to shine on GitHub Pages and connect seamlessly to **annovateresearch.ca**. This HTML file includes all the sections we’ve built together, styled consistently and structured for clarity, responsiveness, and professionalism.
+
+---
+
+### 🧩 Full Homepage HTML (Ready for GitHub Pages)
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ali Riaz | Innovate Research</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { margin: 0; font-family: 'Segoe UI', sans-serif; line-height: 1.6; background-color: #f4f4f4; }
+    h2 { margin-top: 0; }
+    section { padding: 4em 2em; }
+    .cta-button {
+      display: inline-block;
+      margin-top: 1em;
+      padding: 0.8em 1.5em;
+      background-color: #00796b;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Hero Section -->
+<section style="padding: 4em 2em; background: linear-gradient(to right, #e0f7fa, #ffffff); font-family: 'Segoe UI', sans-serif;">
+  <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 2em; max-width: 1000px; margin: 0 auto;">
+    
+    <!-- Intro Text Left -->
+    <div style="flex: 1; min-width: 280px;">
+      <h1 style="font-size: 3em; color: #00796b; margin-bottom: 0.5em;">Hey, I’m Ali Riaz.</h1>
+      <p style="font-size: 1.5em; color: #333;">
+        I help create tailored molecular solutions for real-world challenges.
+      </p>
+      <a href="#contact" class="cta-button" style="display: inline-block; margin-top: 1.5em; padding: 0.8em 1.5em; background-color: #00796b; color: white; text-decoration: none; border-radius: 4px;">
+        Let’s work together
+      </a>
+    </div>
+
+    <!-- Photo Right -->
+	<div style="flex: 1; min-width: 280px; text-align: center;">
+ 	 <img src="images/ali-riaz.jpg" alt="Ali Riaz" style="width: 250px; border-radius: 50%; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+	</div>
+
+  </div>
+</section>
+
+
+<!-- My Approach -->
+<section style="padding: 4em 2em; background-color: #f9f9f9; font-family: 'Segoe UI', sans-serif;">
+  <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 2em; max-width: 1000px; margin: 0 auto;">
+    
+    <!-- Photo Left -->
+    <div style="flex: 1; min-width: 280px; text-align: center;">
+      <img src="generic-photo.jpg" alt="Research Collaboration" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+    </div>
+
+    <!-- Text Right -->
+    <div style="flex: 2; min-width: 280px;">
+      <h2 style="font-size: 2.5em; color: #00796b; margin-bottom: 1em;">My Approach</h2>
+
+      <div style="margin-bottom: 2em;">
+        <h3 style="font-size: 1.6em; color: #333; margin-bottom: 0.5em;">Collaborative</h3>
+        <p style="color: #555;">
+          I believe in the power of collaboration to advance scientific discovery. As an extension of your research team, I immerse myself in your goals and challenges. I work closely with peers and institutions to design tailored molecules and develop innovative materials that not only meet performance expectations—but often exceed them. My approach blends deep chemical insight with a global perspective, shaped by years of international research and interdisciplinary engagement.
+        </p>
+      </div>
+
+      <div>
+        <h3 style="font-size: 1.6em; color: #333; margin-bottom: 0.5em;">Iterative Approach</h3>
+        <p style="color: #555;">
+          I take an iterative approach to molecular design and material development, ensuring each step aligns with the intended functionality and scientific goals. Through careful refinement and repeated testing, I work collaboratively to optimize structures and properties—leaving no detail overlooked. This methodical process allows for precision, adaptability, and innovation in every project.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Experience -->
+<section style="padding: 4em 2em; background-color: #ffffff; font-family: 'Segoe UI', sans-serif;">
+  <h2 style="text-align: center; font-size: 2.5em; color: #333; margin-bottom: 2em;">Experience</h2>
+
+  <div style="display: flex; flex-wrap: wrap; justify-content: space-around; gap: 2em; max-width: 1200px; margin: 0 auto;">
+    
+    <!-- Completed Research Projects -->
+    <div style="flex: 1; min-width: 280px; padding: 1em; text-align: center;">
+      <h3 style="font-size: 1.6em; color: #00796b; margin-bottom: 0.5em;">Completed Research Projects</h3>
+      <p style="color: #555;">Global research contributions at leading academic institutions.</p>
+    </div>
+
+    <!-- 10+ Years of Experience -->
+    <div style="flex: 1; min-width: 280px; padding: 1em; text-align: center;">
+      <h3 style="font-size: 1.6em; color: #00796b; margin-bottom: 0.5em;">10+ Years of Research Experience</h3>
+      <p style="color: #555;">In Chemistry and Materials, driving innovation through molecular design.</p>
+    </div>
+
+    <!-- Community Advocate -->
+    <div style="flex: 1; min-width: 280px; padding: 1em; text-align: center;">
+      <h3 style="font-size: 1.6em; color: #00796b; margin-bottom: 0.5em;">Community Advocate</h3>
+      <p style="color: #555;">Championing a more inclusive world through science and outreach.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- Case Studies -->
+<section style="padding: 4em 2em; background-color: #f0f4f8; font-family: 'Segoe UI', sans-serif;">
+  <h2 style="text-align: center; font-size: 2.5em; color: #333; margin-bottom: 2em;">Case Studies</h2>
+
+  <div style="max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: 3em; text-align: center;">
+
+    <!-- Functional Materials -->
+    <div>
+      <a href="functional-materials.html" style="text-decoration: none; color: inherit;">
+        <h3 style="font-size: 2em; color: #00796b; margin-bottom: 0.3em;">Functional Materials</h3>
+        <h4 style="font-size: 1.3em; color: #333; margin-bottom: 0.5em;">Tailored Functionalities</h4>
+      </a>
+      <p style="font-size: 1em; color: #555;">
+        Development of advanced functional materials having tailored functionalities.
+      </p>
+    </div>
+
+    <!-- Photonic Materials -->
+    <div>
+      <a href="photonic-materials.html" style="text-decoration: none; color: inherit;">
+        <h3 style="font-size: 2em; color: #00796b; margin-bottom: 0.3em;">Photonic Materials</h3>
+        <h4 style="font-size: 1.3em; color: #333; margin-bottom: 0.5em;">Controlled Optical Properties</h4>
+      </a>
+      <p style="font-size: 1em; color: #555;">
+        Developing strategies, methodologies and tools to synthesize photonic materials and provide them with controlled functionalities.
+      </p>
+    </div>
+
+    <!-- Smart Devices -->
+    <div>
+      <a href="smart-devices.html" style="text-decoration: none; color: inherit;">
+        <h3 style="font-size: 2em; color: #00796b; margin-bottom: 0.3em;">Smart Devices</h3>
+        <h4 style="font-size: 1.3em; color: #333; margin-bottom: 0.5em;">Textile-Integrated Sensors</h4>
+      </a>
+      <p style="font-size: 1em; color: #555;">
+        Development of soft flexible conducting fiber sensors to integrate into textiles.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Research Highlights Slider -->
+<section style="background-color: #f0f8ff;">
+  <h2 style="text-align: center;">Research Highlights</h2>
+  <div id="slider" style="position: relative; max-width: 800px; margin: 0 auto; overflow: hidden; border-radius: 8px;">
+    <div id="slides" style="position: relative; height: 400px;">
+      <div class="slide active">
+        <img src="abstract1.jpg" alt="Graphical Abstract 1" style="width: 100%; height: 100%; object-fit: cover;">
+        <div class="caption">Biodegradable polymer for medical implants</div>
+      </div>
+      <div class="slide">
+        <img src="abstract2.jpg" alt="Graphical Abstract 2" style="width: 100%; height: 100%; object-fit: cover;">
+        <div class="caption">Nanostructured coatings for thermal regulation</div>
+      </div>
+      <div class="slide">
+        <img src="abstract3.jpg" alt="Graphical Abstract 3" style="width: 100%; height: 100%; object-fit: cover;">
+        <div class="caption">Published in Advanced Materials, 2024</div>
+      </div>
+    </div>
+    <div id="dots" style="text-align: center; margin-top: 1em;">
+      <span class="dot active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section style="background-color: #ffffff;">
+  <h2 style="text-align: center;">What Professionals Say</h2>
+  <div style="display: flex; flex-wrap: wrap; gap: 2em; justify-content: center;">
+    <div style="flex: 1; min-width: 300px; background: #f9f9f9; padding: 1.5em; border-radius: 8px;">
+      <p>“Ali’s molecular design expertise is unmatched...”</p>
+      <p style="text-align: right;">— Dr. Jane Smith</p>
+    </div>
+    <div style="flex: 1; min-width: 300px; text-align: center;">
+      <img src="testimonial-letter1.jpg" alt="Letter of Recommendation" style="max-width: 100%; border-radius: 8px;">
+      <p>Letter from Prof. John Doe</p>
+    </div>
+  </div>
+</section>
+
+<!-- Get in Touch -->
+<section id="contact" style="background-color: #e8f5e9;">
+  <h2 style="text-align: center;">Get in Touch</h2>
+  <p style="text-align: center;">Schedule a session with me to discuss your project.</p>
+  <div style="display: flex; flex-wrap: wrap; gap: 2em; justify-content: center;">
+    <div style="flex: 1; min-width: 280px; text-align: center;">
+      <img src="generic-contact-photo.jpg" alt="Get in Touch" style="max-width: 100%; border-radius: 8px;">
+    </div>
+    <form style="flex: 1; min-width: 280px; background: white; padding: 2em; border-radius: 8px;">
+      <label>Name</label><input type="text" required style="width: 100%; margin-bottom: 1em;">
+      <label>Email</label><input type="email" required style="width: 100%; margin-bottom: 1em;">
+      <label>Message</label><textarea rows="5" required style="width: 100%;"></textarea>
+      <button type="submit" style="margin-top: 1em; background-color: #2e7d32; color: white; padding: 0.8em 1.5em; border: none; border-radius: 4px;">Send Message</button>
+    </form>
+  </div>
+  <div style="text-align: center; margin-top: 2em;">
+    <p>Prefer email? <a href="mailto:ali@annovateresearch.ca">ali@annovateresearch.ca</a></p>
+    <a href="#"><img src="linkedin-icon.png" alt="LinkedIn" style="width: 32px;"></a>
+    <a href="#"><img src="researchgate-icon.png" alt="ResearchGate" style="width: 32px;"></a>
+    <a href="#"><img src="orcid-icon.png" alt="ORCID" style="width: 32px;"></a>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section style="background-color: #f9f9f9;">
+  <h2 style="text-align: center;">Frequently Asked Questions</h2>
+  <div style="max-width: 700px; margin: 0 auto;">
+    <div class="faq-item"><button class="faq-question">Where do I begin?</button><div class="faq-answer"><p>First things first, don't
+<footer style="background-color: #263238; color: white; padding: 2em; text-align: center; font-size: 0.9em;">
+  <p><strong>Ali Riaz</strong> | Québec, QC, Canada</p>
+  <p>Email: <a href="mailto:ali@annovateresearch.ca" style="color: #80cbc4;">ali@annovateresearch.ca</a></p>
+  <p>Phone: +1 (XXX) XXX-XXXX</p>
+  <p style="margin-top: 1em;">© 2025 Ali Riaz. All rights reserved.</p>
+  <div style="margin-top: 1em;">
+    <a href="https://www.linkedin.com/in/yourprofile" target="_blank" style="margin: 0 10px;">
+      <img src="linkedin-icon.png" alt="LinkedIn" style="width: 24px;">
+    </a>
+    <a href="https://www.researchgate.net/profile/yourprofile" target="_blank" style="margin: 0 10px;">
+      <img src="researchgate-icon.png" alt="ResearchGate" style="width: 24px;">
+    </a>
+    <a href="https://orcid.org/your-orcid-id" target="_blank" style="margin: 0 10px;">
+      <img src="orcid-icon.png" alt="ORCID" style="width: 24px;">
+    </a>
+  </div>
+</footer>
