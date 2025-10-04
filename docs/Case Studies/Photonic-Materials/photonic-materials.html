@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Functional Materials</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f0f4f8;
+      color: #333;
+    }
+
+    header {
+      background-color: #00796b;
+      color: white;
+      padding: 2em;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 4em;
+      margin-bottom: 0.2em;
+    }
+
+    header h2 {
+      font-size: 2em;
+      margin-bottom: 0.5em;
+      color: #e0f7fa;
+    }
+
+    .intro {
+  max-width: 1000px;
+  margin: 3em auto;
+  padding: 0 1.5em;
+  font-size: 1.2em;
+  line-height: 1.4;
+  color: #555;
+  text-align: justify;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+    .page-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 4em 2em;
+    }
+
+    .article-block {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-bottom: 4em;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      overflow: hidden;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+
+    .article-block.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .article-block:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+
+    .article-image, .article-text {
+      flex: 1 1 50%;
+      padding: 2em;
+      box-sizing: border-box;
+    }
+
+    .article-image img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .article-image img:hover {
+      transform: scale(1.02);
+    }
+
+    .article-text h3 {
+      font-size: 2em;
+      color: #00796b;
+      margin-bottom: 1em;
+    }
+
+    .article-text strong {
+      display: block;
+      margin-top: 1em;
+      margin-bottom: 0.5em;
+      color: #333;
+    }
+
+    .justified-list {
+  list-style: none;
+  padding-left: 0;
+  text-align: justify;
+  font-size: 1.2em;
+  color: #555;
+  margin-bottom: 1em;
+}
+
+.justified-list li::before {
+  content: "🔹 ";
+  margin-right: 0.3em;
+}
+
+.justified-list ul {
+  list-style: none;
+  padding-left: 1.5em;
+  margin-top: 0.5em;
+}
+
+.justified-list ul li::before {
+  content: "◾ ";
+  margin-right: 0.3em;
+}
+
+
+    .download-btn {
+      display: inline-block;
+      margin-top: 1.5em;
+      padding: 0.8em 1.2em;
+      background-color: #00796b;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .download-btn:hover {
+      background-color: #005f56;
+    }
+
+    .lightbox {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.8);
+      justify-content: center;
+      align-items: center;
+    }
+
+    .lightbox img {
+      max-width: 90%;
+      max-height: 90%;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(255,255,255,0.3);
+    }
+
+    @media (max-width: 768px) {
+      .article-block {
+        flex-direction: column;
+      }
+
+      .article-block:nth-child(even) {
+        flex-direction: column;
+      }
+
+      .article-text h3 {
+        font-size: 1.5em;
+      }
+
+      .justified-list {
+        font-size: 1em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Photonic Materials</h1>
+    <h2>Photo-responsive Materials</h2>
+  </header>
+
+  <div class="intro">
+    <p>
+      We focus on the development of advanced photonic materials with tailored properties to meet specific application needs. Our research integrates chemistry, physics, and engineering to design materials that respond to photo stimuli, enhance performance, and enable new technologies.
+    </p>
+    <p>
+      Applications include soft photonic materials, biomedical devices, and sensors. Our team uses cutting-edge synthesis techniques and characterization tools to push the boundaries of material science.
+    </p>
+  </div>
+
+  <div class="page-container">
+
+    <!-- Article 1 -->
+<div class="article-block">
+  <div class="article-text">
+    <h3>Effect of Photoinitiators Doped in PDMS for Femtosecond-Laser Writing:Characterization and Outcomes</h3>
+    <strong>🔬 Research Problem</strong>
+    <ul class="justified-list">
+      <li>Femtosecond laser writing on PDMS film resulted in surface burning instead of clean patterning.</li>
+      <li>The excessive energy from the laser caused thermal damage, compromising the integrity of the PDMS surface.</li>
+      <li>A reliable method was needed to prevent burning and enable precise laser inscription.</li>
+    </ul>
+
+    <strong>✅ Proposed Solution</strong>
+    <ul class="justified-list">
+      <li>Photoinitiators were doped into the PDMS matrix.</li>
+      <li>These additives absorbed excess laser energy, reducing thermal stress.</li>
+      <li>Enhanced curing efficiency led to clean, controlled laser writing without surface degradation.</li>
+    </ul>
+
+    <a class="download-btn" href="ACS-Omega.png" target="_blank">Download Full Article</a>
+  </div>
+  <div class="article-image">
+    <img src="ACS-Omega.png" alt="ACS Omega Article Page" onclick="openLightbox(this.src)" />
+  </div>
+</div>
+
+<!-- Article 2 -->
+
+<div class="article-block">
+<div class="article-text">
+  <h3>Photosensitization agents for fs laser writing in PDMS</h3>
+
+  <strong>🔬 Research Problem</strong>
+  <ul class="justified-list">
+    <li>The initial solution using photoinitiators in PDMS showed promise, but optimization was needed.</li>
+    <li>It was unclear how different photoinitiators would affect the optical properties, especially the refractive index of the PDMS matrix.</li>
+    <li>A systematic study was required to evaluate multiple photoinitiators and their impact on laser writing precision and material behavior.</li>
+  </ul>
+
+  <strong>✅ Proposed Solution</strong>
+  <ul class="justified-list">
+    <li>Several photoinitiators were tested within the PDMS matrix.</li>
+    <li>Their influence on the refractive index was carefully measured and analyzed.</li>
+    <li>The study identified specific photoinitiators that enhanced optical clarity and improved laser inscription quality, paving the way for more refined microfabrication techniques.</ul>
+    </li>
+  </ul>
+
+  <a class="download-btn" href="Scientific-Reports.png" target="_blank">Download Full Article</a>
+</div>
+       <div class="article-image">
+        <img src="Scientific-Reports.png" alt="Scientific Reports Article Page" onclick="openLightbox(this.src)" />
+      </div>
+    </div>
+    
+<!-- Article 3 -->
+
+<div class="article-block">
+<div class="article-text">
+  <h3>Synthesis and Characterization of Gadolinium-Based Nanocrystals for their Potential Application as Trimodal Imaging Contrast Agents</h3>
+
+  <strong>🔬 Research Problem</strong>
+  <ul class="justified-list">
+    <li>Lanthanide-doped gadolinium nanomaterials are highly promising for biological imaging, but require precise structural control for optimal performance.</li>
+    <li>Sodium gadolinium fluoride (β-NaGdF₄) is an ideal host for luminescent lanthanide ions, yet its full potential in dual-modality imaging (CT and MRI) needed to be explored.</li>
+    <li>A challenge remained in engineering a multifunctional nanostructure that could combine X-ray absorption, magnetic resonance enhancement, and luminescent properties.</li>
+  </ul>
+
+  <strong>✅ Proposed Solution</strong>
+  <ul class="justified-list">
+    <li>Developed core-shell nanocrystals: β-NaGdF₄ doped with Yb/Er as the core, coated with β-NaGdF₄ doped with Nd as the shell.</li>
+    <li>The core (Yb/Er) enabled upconversion luminescence, while the shell (Nd) enhanced near-infrared emission and added functionality.</li>
+    <li>Gadolinium’s heavy atomic nature allowed strong X-ray absorption for CT imaging.</li>
+ 	<li>Its seven unpaired electrons and long electronic relaxation time contributed to MRI contrast enhancement.</li>
+	<li>XRD analysis confirmed the successful synthesis of host, core, and core-shell structures with high crystallinity.</li>   
+
+  </ul>
+
+  <a class="download-btn" href="Gd-Based-Contrast-Agent.png" target="_blank">Download Full Article</a>
+</div>
+       <div class="article-image">
+        <img src="Gd-Based-Contrast-Agent.png" alt="Contrast Agent Article Page" onclick="openLightbox(this.src)" />
+      </div>
+    </div>
+
+    <!-- Add more articles here -->
+
+  </div>
+
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-img" src="" alt="Expanded View" />
+  </div>
+
+  <script>
+    function openLightbox(src) {
+      document.getElementById('lightbox-img').src = src;
+      document.getElementById('lightbox').style.display = 'flex';
+    }
+
+    function closeLightbox() {
+      document.getElementById('lightbox').style.display = 'none';
+    }
+
+    const blocks = document.querySelectorAll('.article-block');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    blocks.forEach(block => observer.observe(block));
+  </script>
+
+</body>
+</html>
