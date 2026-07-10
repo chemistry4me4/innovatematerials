@@ -17,6 +17,21 @@
       text-decoration: none;
       border-radius: 4px;
     }
+	 <!-- CSS for Read More button in Case Studeis section -->
+	  .read-more-btn {
+      margin-top: 10px;
+      background: #00796b;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1em;
+      transition: background 0.3s;
+    }
+    .read-more-btn:hover {
+      background: #005f52;
+    }
   </style>
 	<!-- Swiper CSS + JS for Testamonial Section -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -124,6 +139,17 @@
       <p style="font-size: 1.3em; color: #555;">
         Development of advanced functional materials having tailored functionalities.
       </p>
+
+      <!-- Hidden extended text -->
+      <div class="more-text" style="display:none; font-size: 1.2em; color: #444; margin-top: 0.5em;">
+        <p>
+          These materials are engineered at the molecular level to achieve specific performance
+          characteristics such as conductivity, flexibility, responsiveness, and durability.
+          Applications include energy storage, catalysis, biomedical devices, and smart coatings.
+        </p>
+      </div>
+
+      <button class="read-more-btn">Read More</button>
     </div>
 
     <!-- Photonic Materials -->
@@ -135,6 +161,17 @@
       <p style="font-size: 1.3em; color: #555;">
         Developing strategies, methodologies and tools to synthesize photonic materials and provide them with controlled functionalities.
       </p>
+
+      <!-- Hidden extended text -->
+      <div class="more-text" style="display:none; font-size: 1.2em; color: #444; margin-top: 0.5em;">
+        <p>
+          Photonic materials are designed to manipulate light through engineered refractive indices,
+          band gaps, and structural arrangements. They enable innovations in sensors, optical filters,
+          communication systems, and next‑generation display technologies.
+        </p>
+      </div>
+
+      <button class="read-more-btn">Read More</button>
     </div>
 
     <!-- Smart Solutions -->
@@ -146,11 +183,36 @@
       <p style="font-size: 1.3em; color: #555;">
         Development of soft flexible conducting fiber sensors to integrate into textiles.
       </p>
+
+      <!-- Hidden extended text -->
+      <div class="more-text" style="display:none; font-size: 1.2em; color: #444; margin-top: 0.5em;">
+        <p>
+          These sensors enable real‑time monitoring of motion, pressure, and environmental conditions.
+          They are lightweight, washable, and seamlessly embedded into fabrics for wearable technology,
+          healthcare monitoring, and smart garment applications.
+        </p>
+      </div>
+
+      <button class="read-more-btn">Read More</button>
     </div>
 
   </div>
 </section>
+<script>
+  document.querySelectorAll('.read-more-btn').forEach(button => {
+    button.addEventListener('click', () => {
+      const moreText = button.previousElementSibling;
 
+      if (moreText.style.display === "none") {
+        moreText.style.display = "block";
+        button.textContent = "Read Less";
+      } else {
+        moreText.style.display = "none";
+        button.textContent = "Read More";
+      }
+    });
+  });
+</script>
 
 <!-- Research Highlights Slider -->
 <section style="background-color: #f0f8ff; padding: 2em 0;">
