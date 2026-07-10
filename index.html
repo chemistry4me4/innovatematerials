@@ -18,6 +18,9 @@
       border-radius: 4px;
     }
   </style>
+	<!-- Swiper CSS + JS for Testamonial Section -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 <body>
 
@@ -266,42 +269,77 @@
 </script>
 
 <!-- Testimonials -->
-<section style="background-color: #ffffff;">
+<section style="background-color: #ffffff; padding: 2em 0;">
   <h2 style="text-align: center;">What Professionals Say</h2>
-  <div style="display: flex; flex-wrap: wrap; gap: 2em; justify-content: center;">
-    <div style="flex: 1; min-width: 300px; background: #f9f9f9; padding: 1.5em; border-radius: 8px;">
-      <p>“Ali’s molecular design expertise is unmatched...”</p>
-      <p style="text-align: right;">— Dr. MSA Khan</p>
+
+  <div class="swiper testimonial-cards" style="max-width: 700px; margin: auto;">
+
+    <div class="swiper-wrapper">
+
+      <!-- Slide 1 -->
+      <div class="swiper-slide glass-card">
+        <p>“Ali’s molecular design expertise is unmatched...”</p>
+        <p style="text-align: right; font-weight: bold;">— Dr. MSA Khan</p>
+        <img src="testimonial-letter1.jpg" alt="Letter" class="testimonial-img">
+        <p style="text-align:center;">Letter from Prof. Dr. MSA Khan</p>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="swiper-slide glass-card">
+        <p>“Ali demonstrates exceptional creativity in computational chemistry...”</p>
+        <p style="text-align: right; font-weight: bold;">— Dr. Jane Smith</p>
+        <img src="testimonial-letter2.jpg" alt="Letter" class="testimonial-img">
+        <p style="text-align:center;">Letter from Dr. Jane Smith</p>
+      </div>
+
+      <!-- Add more slides here -->
+
     </div>
-    <div style="flex: 1; min-width: 300px; text-align: center;">
-      <img src="testimonial-letter1.jpg" alt="Letter of Recommendation" style="max-width: 100%; border-radius: 8px;">
-      <p>Letter from Prof. Dr. MSA Khan</p>
-    </div>
+
+    <div class="swiper-pagination"></div>
+
   </div>
 </section>
 
-<!-- Get in Touch -->
-<section id="contact" style="background-color: #e8f5e9;">
-  <h2 style="text-align: center;">Get in Touch</h2>
-  <p style="text-align: center;">Schedule a session with me to discuss your project.</p>
-  <div style="display: flex; flex-wrap: wrap; gap: 2em; justify-content: center;">
-    <div style="flex: 1; min-width: 280px; text-align: center;">
-      <img src="Images/24-7.jpg" alt="Get in Touch" style="max-width: 100%; border-radius: 8px;">
-    </div>
-    <form style="flex: 1; min-width: 280px; background: white; padding: 2em; border-radius: 8px;">
-      <label>Name</label><input type="text" required style="width: 100%; margin-bottom: 1em;">
-      <label>Email</label><input type="email" required style="width: 100%; margin-bottom: 1em;">
-      <label>Message</label><textarea rows="5" required style="width: 100%;"></textarea>
-      <button type="submit" style="margin-top: 1em; background-color: #2e7d32; color: white; padding: 0.8em 1.5em; border: none; border-radius: 4px;">Send Message</button>
-    </form>
-  </div>
-  <div style="text-align: center; margin-top: 2em;">
-    <p>Prefer email? <a href="mailto:chemistry4me4@hotmail.com">ali@innovatematerials.ca</a></p>
-    <a href="https://www.linkedin.com/in/ali-riaz-6756483b2"><img src="Images/ln.png" alt="LinkedIn" target="_blank" style="width: 32px;"></a>
-    <a href="https://www.researchgate.net/profile/Ali-Riaz-6"><img src="Images/rg.png" alt="ResearchGate" target="_blank" style="width: 32px;"></a>
-    <a href="https://orcid.org/0000-0001-5334-9829"><img src="Images/id.png" alt="ORCID" target="_blank" style="width: 32px;"></a>
-  </div>
-</section>
+<style>
+  .glass-card {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 16px;
+    padding: 1.5em;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+  }
+
+  .testimonial-img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 1em;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Optional: smooth fade-in animation */
+  .glass-card {
+    animation: fadeIn 0.6s ease;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+</style>
+<script>
+  const swiper = new Swiper('.testimonial-cards', {
+    effect: 'cards',
+    grabCursor: true,
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  });
+</script>
 
 <!-- FAQ -->
 <section style="background-color: #f9f9f9;">
