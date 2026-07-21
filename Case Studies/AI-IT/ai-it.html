@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Functional Materials</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f0f4f8;
+      color: #333;
+    }
+
+    header {
+      background-color: #00796b;
+      color: white;
+      padding: 2em;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 4em;
+      margin-bottom: 0.2em;
+    }
+
+    header h2 {
+      font-size: 2em;
+      margin-bottom: 0.5em;
+      color: #e0f7fa;
+    }
+
+    .intro {
+  max-width: 1000px;
+  margin: 3em auto;
+  padding: 0 1.5em;
+  font-size: 1.2em;
+  line-height: 1.4;
+  color: #555;
+  text-align: justify;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+    .page-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 4em 2em;
+    }
+
+    .article-block {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-bottom: 4em;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      overflow: hidden;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+
+    .article-block.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .article-block:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+
+    .article-image, .article-text {
+      flex: 1 1 50%;
+      padding: 2em;
+      box-sizing: border-box;
+    }
+
+    .article-image img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .article-image img:hover {
+      transform: scale(1.02);
+    }
+
+    .article-text h3 {
+      font-size: 2em;
+      color: #00796b;
+      margin-bottom: 1em;
+    }
+
+    .article-text strong {
+      display: block;
+      margin-top: 1em;
+      margin-bottom: 0.5em;
+      color: #333;
+    }
+
+    .justified-list {
+  list-style: none;
+  padding-left: 0;
+  text-align: justify;
+  font-size: 1.2em;
+  color: #555;
+  margin-bottom: 1em;
+}
+
+.justified-list li::before {
+  content: "🔹 ";
+  margin-right: 0.3em;
+}
+
+.justified-list ul {
+  list-style: none;
+  padding-left: 1.5em;
+  margin-top: 0.5em;
+}
+
+.justified-list ul li::before {
+  content: "◾ ";
+  margin-right: 0.3em;
+}
+
+
+    .download-btn {
+      display: inline-block;
+      margin-top: 1.5em;
+      padding: 0.8em 1.2em;
+      background-color: #00796b;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .download-btn:hover {
+      background-color: #005f56;
+    }
+
+    .lightbox {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.8);
+      justify-content: center;
+      align-items: center;
+    }
+
+    .lightbox img {
+      max-width: 90%;
+      max-height: 90%;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(255,255,255,0.3);
+    }
+
+    @media (max-width: 768px) {
+      .article-block {
+        flex-direction: column;
+      }
+
+      .article-block:nth-child(even) {
+        flex-direction: column;
+      }
+
+      .article-text h3 {
+        font-size: 1.5em;
+      }
+
+      .justified-list {
+        font-size: 1em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Artificial Intelligence & Information Technology</h1>
+    <h2>Softwares in Materials</h2>
+  </header>
+
+  <div class="intro">
+    <p>
+      We focus on the development of advanced AI Models and software with tailored properties to meet specific application needs. Our research integrates chemistry, AI-Models, and Coding to design AI & IT solution that cope with current and future challenges, enhance performance, and enable new technologies.
+    </p>
+    <p>
+      Applications include Machine Learning Models for simulation, Management Databases, and Codes to operate devices. Our team uses cutting-edge coding techniques and programming tools to push the boundaries of material science.
+    </p>
+  </div>
+
+  <div class="page-container">
+
+  <!-- Article 1 -->
+<div class="article-block">
+  <div class="article-text">
+    <h3>Machine‑Learning Powered Adsorption Suite for Real‑Time Qe Prediction and Model Fitting</h3>
+
+    <strong>🔬 Research Problem</strong>
+    <ul class="justified-list">
+      <li>Accurate prediction of adsorption capacity (Qe) is essential for designing efficient sorbents and optimizing batch processes.</li>
+      <li>Traditional adsorption analysis depends on manual curve fitting, static datasets, and slow model comparisons.</li>
+      <li>Real‑time adsorption data is often complex and noisy, making interpretation difficult without advanced computational tools.</li>
+      <li>Predicting Qe for new samples or batch experiments typically requires repeated laboratory trials.</li>
+      <li>Researchers lack an integrated platform that can learn from experimental data, identify best‑fit sorption models, and visualize results in one workflow.</li>
+    </ul>
+
+    <strong>✅ Proposed Solution</strong>
+    <ul class="justified-list">
+      <li>An advanced <strong>Adsorption Suite</strong> was developed that integrates machine learning with classical sorption models.</li>
+      <li>Real‑time adsorption data is used to train predictive algorithms, enabling the system to learn adsorption behavior directly from experiments.</li>
+      <li>The suite predicts Qe values for both individual samples and batch datasets, reducing the need for repeated lab work.</li>
+      <li>Built‑in sorption models automatically fit the data and identify the best‑fit isotherm.</li>
+      <li>The platform generates high‑quality visual graphs for instant interpretation of trends and prediction accuracy.</li>
+      <li>This integrated solution accelerates the development of high‑performance sorbents.</li>
+    </ul>
+  </div>
+
+  <div class="article-image">
+    <img src="adsorption-suite.png" alt="Adsorption Suite Overview" onclick="openLightbox(this.src)" />
+  </div>
+</div>
+
+
+<!-- Article 2 (will auto‑reverse because it's nth-child(even)) -->
+<div class="article-block">
+  <div class="article-text">
+    <h3>Remotely Operated Titration System for Safe, Accessible, and Scalable Chemistry Education</h3>
+
+    <strong>🔬 Research Problem</strong>
+    <ul class="justified-list">
+      <li>Real-time chemistry experiments can be hazardous for young students and early-stage chemists.</li>
+      <li>Physically impaired learners often cannot safely manipulate lab equipment.</li>
+      <li>Large groups struggle to perform individual experiments in traditional labs.</li>
+      <li>Virtual labs lack real chemical behavior, while robotic labs remove human interaction.</li>
+      <li>A balanced system was needed that preserves real chemistry while enabling safe remote operation.</li>
+    </ul>
+
+    <strong>✅ Proposed Solution</strong>
+    <ul class="justified-list">
+      <li>A fully functional <strong>remotely operated titration setup</strong> was developed.</li>
+      <li>The system performs complete titration workflows:
+        <ul class="sub-list">
+          <li>Solution preparation</li>
+          <li>Standardization</li>
+          <li>Conductometric titration</li>
+          <li>Potentiometric titration</li>
+          <li>Colorimetric titration</li>
+        </ul>
+      </li>
+      <li>Students control every step remotely through an interactive interface.</li>
+      <li>A live camera feed allows real-time observation of the experiment.</li>
+      <li>This hybrid approach delivers safe, accessible, and scalable chemistry education.</li>
+    </ul>
+  </div>
+
+  <div class="article-image">
+    <img src="remote-lab.png" alt="Remote Titration System" onclick="openLightbox(this.src)" />
+  </div>
+</div>
+
+
+<!-- Article 3 (normal order again) -->
+<div class="article-block">
+  <div class="article-text">
+    <h3>Integrated Lab Management Database for Smart, Efficient, and Traceable Laboratory Operations</h3>
+
+    <strong>🔬 Research Problem</strong>
+    <ul class="justified-list">
+      <li>Laboratories generate large volumes of user data, equipment logs, chemical inventories, and usage records.</li>
+      <li>Tracking instrument availability becomes inefficient as lab size grows.</li>
+      <li>Manual inventory management leads to missing chemicals and expired reagents.</li>
+      <li>Incomplete usage records complicate maintenance planning.</li>
+      <li>Labs needed a unified digital system to centralize data and streamline operations.</li>
+    </ul>
+
+    <strong>✅ Proposed Solution</strong>
+    <ul class="justified-list">
+      <li>A comprehensive <strong>Lab Management Database</strong> was developed.</li>
+      <li>The system maintains user profiles, equipment inventory, chemical inventory, and usage logs.</li>
+      <li>Instrument reservation and availability tracking ensure efficient scheduling.</li>
+      <li>Real-time chemical usage monitoring supports accurate stock management.</li>
+      <li>Equipment usage records help plan maintenance and ensure responsible operation.</li>
+      <li>This centralized platform modernizes laboratory management.</li>
+    </ul>
+  </div>
+
+  <div class="article-image">
+    <img src="lab-management-database.png" alt="Lab Management Database" onclick="openLightbox(this.src)" />
+  </div>
+</div>
+
+
+
+    <!-- Add more articles here -->
+
+  </div>
+
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-img" src="" alt="Expanded View" />
+  </div>
+
+  <script>
+    function openLightbox(src) {
+      document.getElementById('lightbox-img').src = src;
+      document.getElementById('lightbox').style.display = 'flex';
+    }
+
+    function closeLightbox() {
+      document.getElementById('lightbox').style.display = 'none';
+    }
+
+    const blocks = document.querySelectorAll('.article-block');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    blocks.forEach(block => observer.observe(block));
+  </script>
+
+</body>
+</html>
